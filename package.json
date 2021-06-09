@@ -1,0 +1,27 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "(createdb test-testing && dropdb --if-exists test-testing) && NODE_ENV=test mocha",
+    "start": "node app.js",
+    "dev": "nodemon app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai": "^4.3.4",
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.3.1",
+    "express": "^4.17.1",
+    "gitignore": "^0.6.0",
+    "knex": "^0.95.6",
+    "mocha": "^9.0.0",
+    "nodemon": "^2.0.7",
+    "pg": "^8.6.0",
+    "serve-favicon": "^2.5.0",
+    "supertest": "^6.1.3"
+  }
+}
