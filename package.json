@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "(createdb test-testing && dropdb --if-exists test-testing) && NODE_ENV=test mocha",
+    "test": "(dropdb --if-exists test-testing && createdb test-testing ) && NODE_ENV=test mocha ",
     "start": "node app.js",
     "dev": "nodemon app"
   },
